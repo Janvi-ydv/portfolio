@@ -8,17 +8,28 @@ import NavLink from '~/components/NavLink.astro'
 const lightDarkAutoTheme = siteConfig.themes.mode === 'light-dark-auto'
 const selectTheme =
   siteConfig.themes.mode === 'select' && siteConfig.themes.include.length > 1
+const barCount = 72
 ---
 
 <header>
-  <div class="relative flex items-center justify-between bg-accent/10 rounded-xl">
-    <a
-      id="logo"
-      href="/"
-      class="block px-4 py-1.5 max-w-full no-underline items-center bg-accent text-background font-bold rounded-xl"
-    >
-      {siteConfig.title}
+  <div class="relative flex items-center" style="padding:6px;">
+    <a id="logo" href="/" class="no-underline" aria-label={siteConfig.title}>
+      <div class="flex items-center gap-4 px-3 py-1" style="align-items:center;">
+        <div class="nav-pill inline-flex items-center px-4 py-1.5 font-bold leading-none" role="img" aria-hidden="false">
+          {siteConfig.title}
+        </div>
+      </div>
     </a>
+    <!-- Middle bars that expand to fill space until the controls -->
+    <div class="nav-middle flex-1 mx-4">
+      <div class="nav-bars flex items-center gap-1 overflow-hidden" aria-hidden="true">
+        {
+          Array.from({ length: barCount }).map((_, i) => (
+            <span class="nav-bar" key={i}></span>
+          ))
+        }
+      </div>
+    </div>
     <div class="flex items-center gap-3 sm:mr-3">
       <Search trailingSlashes={siteConfig.trailingSlashes} />
       {lightDarkAutoTheme && <LightDarkAutoButton />}
@@ -85,3 +96,29 @@ const selectTheme =
     toggleNavMobileMenu('toggle')
   })
 </script>
+
+<style is:global>
+  /* Theme-aware navbar styles using CSS variables generated in Layout */
+  header > div[style] {
+    background: color-mix(in srgb, var(--theme-foreground, #111111) 8%, var(--theme-background, #0b0b0b));
+    border-radius: 0; /* do not round navbar corner */
+  }
+  .nav-pill {
+    background: var(--theme-accent, #f2c94c);
+    color: var(--theme-background, #0b0b0b);
+    box-shadow: none;
+  }
+  .nav-bars .nav-bar {
+    background: var(--theme-accent, #f2c94c);
+    display: inline-block;
+    width: 3px;
+    height: 28px;
+    border-radius: 1px;
+  }
+  .nav-middle { align-self: stretch; }
+  .nav-bars { height: 32px; align-items: center; }
+  /* Make the bars responsive and scale with theme */
+  @media (max-width: 640px) {
+    .nav-bars { display: none; }
+  }
+</style>

@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets'
-import GitHubActivityCalendar from '~/components/GitHubActivityCalendar.astro'
 import type { FrontmatterImage } from '~/types'
 
 interface Props {
@@ -28,10 +27,10 @@ const { avatarImage, githubCalendar } = Astro.props
       )
     }
     <div>
-      <div class:list={['m-4 max-w-full prose']}>
+      <div class:list={['m-4 max-w-full prose', 'home-intro']}>
         <slot />
       </div>
     </div>
   </div>
-  {githubCalendar && <GitHubActivityCalendar username={githubCalendar} />}
+  <!-- GitHub activity calendar removed -->
 </div>

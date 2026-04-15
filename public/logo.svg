@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="48" viewBox="0 0 360 48">
+  <defs>
+    <style>
+      .bg { fill: #f2c94c; }
+      .pill { rx: 6; ry: 6; }
+      .label { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace; font-size: 16px; font-weight: 700; fill: #111827; }
+      .bars { fill: #f2c94c; }
+    </style>
+  </defs>
+  <rect x="2" y="6" width="96" height="32" class="bg" rx="6" ry="6" />
+  <text x="14" y="28" class="label">Janvi</text>
+  <!-- vertical bars to the right -->
+  <g transform="translate(110,6)">
+    <!-- draw many small bars spaced across -->
+    <rect x="0" y="0" width="4" height="32" fill="#f2c94c" />
+    <!-- duplicate pattern -->
+    <g fill="#f2c94c">
+      <rect x="10" y="0" width="4" height="32" />
+      <rect x="20" y="0" width="4" height="32" />
+      <rect x="30" y="0" width="4" height="32" />
+      <rect x="40" y="0" width="4" height="32" />
+      <rect x="50" y="0" width="4" height="32" />
+      <rect x="60" y="0" width="4" height="32" />
+      <rect x="70" y="0" width="4" height="32" />
+      <rect x="80" y="0" width="4" height="32" />
+      <rect x="90" y="0" width="4" height="32" />
+      <rect x="100" y="0" width="4" height="32" />
+      <rect x="110" y="0" width="4" height="32" />
+      <rect x="120" y="0" width="4" height="32" />
+      <rect x="130" y="0" width="4" height="32" />
+    </g>
+  </g>
+</svg>

@@ -2,7 +2,6 @@
 avatarImage:
   src: './avatar.jpg'
   alt: 'My avatar'
-githubCalendar: 'stelcodes'
 ---
 
-Welcome to the example site. This site is meant to show off my custom Astro theme/template **MultiTerm** which creates a coder-ready blog complete with an interactive theme changer, RSS, sitemap, tagging, and markdown extensions.
+Hi, I’m Janvi, a Computer Science student with a strong interest in cybersecurity and secure application development. I focus on identifying vulnerabilities and building reliable, well-designed applications. I continuously develop my skills through hands-on labs and practical learning in penetration testing and system security.

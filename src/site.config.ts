@@ -4,7 +4,7 @@ const config: SiteConfig = {
   // Absolute URL to the root of your published site, used for generating links and sitemaps.
   site: 'https://multiterm.stelclementine.com',
   // The name of your site, used in the title and for SEO.
-  title: 'MultiTerm',
+  title: 'Janvi',
   // The description of your site, used for SEO and RSS feed.
   description:
     'A coder-ready Astro blog theme with 59 of your favorite color schemes to choose from',
@@ -18,7 +18,7 @@ const config: SiteConfig = {
   socialCardAvatarImage: './src/content/avatar.jpg',
   // Font imported from @fontsource or elsewhere, used for the entire site.
   // To change this see src/styles/global.css and import a different font.
-  font: 'JetBrains Mono Variable',
+  font: 'Helvetica, Arial, sans-serif',
   // For pagination, the number of posts to display per page.
   // The homepage will display half this number in the "Latest Posts" section.
   pageSize: 6,
