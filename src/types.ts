@@ -148,9 +148,6 @@ export interface ThemesConfig {
 
 export type SocialLinks = {
   github?: string
-  twitter?: string
-  mastodon?: string
-  bluesky?: string
   linkedin?: string
   email?: string
   rss?: boolean

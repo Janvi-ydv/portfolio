@@ -3,4 +3,8 @@ layout: '~/layouts/MarkdownLayout.astro'
 title: About Me
 ---
 
-The laughing kookaburra (Dacelo novaeguineae) is a bird in the kingfisher subfamily Halcyoninae. It is a large robust kingfisher with a whitish head and a brown eye-stripe. The upperparts are mostly dark brown but there is a mottled light-blue patch on the wing coverts. The underparts are cream-white and the tail is barred with rufous and black. The plumage of the male and female birds is similar. The territorial call is a distinctive laugh that is often delivered by several birds at the same time, and is widely used as a stock sound effect in situations that involve a jungle setting.
+I am a Computer Science undergraduate with a strong interest in cybersecurity and ethical hacking. I enjoy understanding how websites, networks, and systems work, identifying security vulnerabilities, and learning how to protect applications from different types of cyber threats. I am passionate about improving my technical skills through practical learning, security testing, and hands-on projects.
+
+I have experience working with tools like Nmap, Burp Suite, Nessus, and Metasploit to perform network scanning, vulnerability assessment, and web application security testing in controlled environments. I am continuously exploring different cybersecurity concepts and learning secure practices to better understand real-world security challenges.
+
+Currently, I am pursuing my Bachelor’s degree in Computer Science from Lloyd Institute of Engineering and Technology. Along with my academic studies, I focus on building practical knowledge, improving problem-solving skills, and gaining hands-on experience in the field of cybersecurity.
