@@ -1,6 +1,6 @@
 {
-  "name": "multiterm-astro",
-  "description": "A terminal-inspired coding blog built with Astro.",
+  "name": "janvi-portfolio",
+  "description": "Cybersecurity portfolio and blog of Janvi.",
   "type": "module",
   "version": "1.0.0",
   "scripts": {
